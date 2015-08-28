@@ -11,7 +11,7 @@
  *        $map([1, 2, 3], $lambda('(a) => a * 2'));
  *
  */
-Ninja.module('$map', ['$curry'], function ($curry) {
+this.Ninja.module('$map', ['$curry'], function ($curry) {
   
   /**
    * Invoca a função callback passada por argumento para cada elemento do Array
@@ -36,4 +36,5 @@ Ninja.module('$map', ['$curry'], function ($curry) {
    * privadas
    */
   return $curry(map);
+  
 });
